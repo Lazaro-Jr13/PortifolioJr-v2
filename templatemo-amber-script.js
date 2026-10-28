@@ -13,7 +13,7 @@ class PhotoCoverflow {
    constructor() {
       this.items = document.querySelectorAll('.coverflow-item');
       this.indicators = document.querySelectorAll('.indicator');
-      this.currentIndex = 4; // Start with middle item
+      this.currentIndex = Math.floor(this.items.length / 2); // Start with the middle item
       this.totalItems = this.items.length;
       this.isPlaying = false;
       this.autoPlayInterval = null;
